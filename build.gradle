@@ -1,6 +1,7 @@
 plugins {
     id 'com.github.johnrengelman.shadow' version '7.1.2'
     id 'java'
+    id "org.sonarqube" version "3.5.0.2730"
 }
 
 group 'org.sickskillz'
@@ -22,6 +23,10 @@ dependencies {
     implementation 'org.jetbrains:annotations:24.0.1'
 }
 
-test {
-
+sonarqube {
+    properties {
+        property "sonar.projectKey", "CharonFramework_charon"
+        property "sonar.organization", "charonframework"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
 }
