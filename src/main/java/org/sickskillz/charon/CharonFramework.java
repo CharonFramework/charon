@@ -20,9 +20,9 @@
 
 package org.sickskillz.charon;
 
-import com.sun.istack.internal.Nullable;
 import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Objects;
 
